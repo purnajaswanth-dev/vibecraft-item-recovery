@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup | SRM Lost & Found</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="auth-container">
+  <div class="auth-card">
+    <h2>Create Account</h2>
+    <p style="opacity:0.7;margin-bottom:15px;">Signup to report lost or found items</p>
+
+    <input id="suUser" placeholder="Username">
+    <input id="suPass" type="password" placeholder="Password">
+
+    <button onclick="signup()">Signup</button>
+
+    <p style="margin-top:15px;font-size:14px;">
+      Already have an account?
+      <a href="/login.html">Login</a>
+    </p>
+  </div>
+</div>
+
+<script>
+async function signup() {
+  const res = await fetch("/api/auth/signup", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      username: suUser.value,
+      password: suPass.value
+    })
+  });
+
+  const text = await res.text();
+  if (text === "SIGNUP_SUCCESS") {
+    alert("Signup successful");
+    window.location.href = "/login.html";
+  } else {
+    alert("User already exists");
+  }
+}
+</script>
+
+</body>
+</html>

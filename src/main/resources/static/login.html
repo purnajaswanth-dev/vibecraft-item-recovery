@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | SRM Lost & Found</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="auth-container">
+  <div class="auth-card">
+    <h2>Welcome Back</h2>
+    <p style="opacity:0.7;margin-bottom:15px;">Login to access your dashboard</p>
+
+    <input id="liUser" placeholder="Username">
+    <input id="liPass" type="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p style="margin-top:15px;font-size:14px;">
+      New user?
+      <a href="/signup.html">Create account</a>
+    </p>
+  </div>
+</div>
+
+<script>
+async function login() {
+  const res = await fetch("/api/auth/login", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      username: liUser.value,
+      password: liPass.value
+    })
+  });
+
+  const text = await res.text();
+  if (text === "LOGIN_SUCCESS") {
+    localStorage.setItem("user", liUser.value);
+    window.location.href = "/index.html";
+  } else {
+    alert("Invalid credentials");
+  }
+}
+</script>
+
+</body>
+</html>

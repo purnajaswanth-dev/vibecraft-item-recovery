@@ -1,0 +1,503 @@
+/* ========= RESET ========= */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #0f172a;
+}
+
+/* ========= HEADER ========= */
+header {
+  background: transparent;
+  color: white;
+  padding: 10px 500px 0px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+header p {
+  opacity: 0.85;
+}
+
+/* ========= NAV ========= */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+nav button {
+  background: #38bdf8;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #0f172a;
+  transition: all 0.2s ease;
+}
+
+nav button:hover {
+  background: #0ea5e9;
+  transform: translateY(-1px);
+}
+
+/* ========= SECTIONS ========= */
+section {
+  display: none;
+}
+
+section:not(.hidden) {
+  display: block;
+}
+
+/* ========= CARD ========= */
+.card {
+  background: white;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* ========= FORMS ========= */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #cbd5f5;
+  font-size: 0.95rem;
+}
+
+textarea {
+  resize: none;
+  height: 90px;
+}
+
+input[type="file"] {
+  padding: 6px;
+}
+
+/* ========= BUTTONS ========= */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button.success {
+  background: #22c55e;
+  color: white;
+}
+
+button.danger {
+  background: #ef4444;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ========= FILTER BAR ========= */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* ========= ITEM CARDS ========= */
+.item-card {
+  background: #f8fafc;
+  border-radius: 14px;
+  padding: 14px;
+  margin: 12px 0;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.item-card b {
+  font-size: 1.05rem;
+}
+
+.item-card p {
+  margin: 6px 0;
+  color: #334155;
+}
+
+/* ========= IMAGES ========= */
+.thumb {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  cursor: zoom-in;
+}
+
+/* ========= IMAGE OVERLAY ========= */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.full-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 14px;
+  cursor: zoom-out;
+}
+
+/* ========= LOGIN / SIGNUP ========= */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  padding: 35px;
+  border-radius: 18px;
+  width: 340px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.auth-card h2 {
+  margin-bottom: 20px;
+}
+
+.auth-card button {
+  width: 100%;
+  background: #38bdf8;
+  margin-top: 10px;
+}
+
+.auth-card button:hover {
+  background: #0ea5e9;
+}
+
+/* ===== PROFILE ICON ===== */
+#profileIcon {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+#profileIcon:hover {
+  transform: scale(1.05);
+}
+
+/* ===== ITEMS GRID ===== */
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.item-card {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #38bdf8;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.item-card img.thumb {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.item-card button {
+  margin-top: 6px;
+  width: 100%;
+}
+
+/* ===== TOP BAR ===== */
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  background: #0f172a;
+  color: white;
+  padding: 15px 20px;
+  gap: 15px;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+}
+
+/* ===== AVATAR ICON ===== */
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(56,189,248,0.8);
+}
+
+.profile-card {
+  border-left: 6px solid #6366f1;
+}
+
+.match-btn {
+  margin-top: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.match-btn:hover {
+  background: #1e40af;
+}
+
+/* ================= PROFILE PAGE ================= */
+
+#myItems {
+  max-width: 900px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Profile header */
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Avatar */
+.avatar {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Profile item card */
+.profile-card {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Item name */
+.profile-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+/* Info text */
+.profile-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #334155;
+}
+
+/* LOST / FOUND badge */
+.profile-card p b {
+  color: #020617;
+}
+
+/* Match button */
+.match-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.match-btn:hover {
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  transform: scale(1.02);
+}
+
+/* LOST vs FOUND accent */
+.profile-card p:nth-child(2):contains("LOST") {
+  color: #ea580c;
+}
+
+.profile-card p:nth-child(2):contains("FOUND") {
+  color: #16a34a;
+}
+/* ================= PROFILE PAGE CARDS (FINAL) ================= */
+
+#myItems {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.item-card {
+  background: linear-gradient(145deg, #ffffff, #f1f5f9);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 6px solid #2563eb;
+}
+
+.item-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* Item title */
+.item-card b {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+/* Text */
+.item-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #334155;
+}
+
+/* Match button */
+.item-card button {
+  margin-top: 14px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.item-card button:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px rgba(34, 197, 94, 0.6);
+}
+
+/* ================= GLOBAL CARD DESIGN ================= */
+
+
+/* Red buttons (Delete) */
+.item-card .danger,
+.item-card button.danger {
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+  color: white;
+}
+
+.item-card .danger:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px rgba(239,68,68,0.6);
+}
+
+
+.item-card.red {
+  border-left-color: #ef4444;
+  background: linear-gradient(135deg, #fef2f2, #fecaca);
+}
+
+/* MATCH COLORS */
+.match-green {
+  border-left: 6px solid #2ecc71;
+  background: #ecfdf3;
+}
+
+.match-yellow {
+  border-left: 6px solid #f1c40f;
+  background: #fff9e6;
+}
+
+.match-red {
+  border-left: 6px solid #e74c3c;
+  background: #fdecea;
+}
+
+.highlight {
+  border: 2px solid #3498db;
+  background: #eef6ff;
+}
+
