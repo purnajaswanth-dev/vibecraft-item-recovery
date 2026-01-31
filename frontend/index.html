@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SRM Lost & Found</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- PROFILE ICON -->
+<a href="/profile.html" id="profileIcon">
+  <span id="profileLetter"></span>
+</a>
+
+
+
+<header>
+  <h1>SRM Lost & Found</h1>
+  <p>Campus-wide Lost & Found Platform</p>
+</header>
+
+<nav>
+  <button onclick="showSection('lost')">Raise Lost Item</button>
+  <button onclick="showSection('found')">Raise Found Item</button>
+  <button onclick="showSection('explore')">Explore Campus Items</button>
+  <button onclick="showSection('my')">My Complaints</button>
+</nav>
+
+<!-- RAISE LOST -->
+<section id="lost" class="card hidden">
+  <h2>Raise Lost Item</h2>
+
+  <input id="lostName" placeholder="Item Name">
+  <select id="lostLocation"></select>
+  <input id="lostMobile" placeholder="Mobile Number">
+
+  <input id="lostTime" type="datetime-local">
+  <textarea id="lostDesc" placeholder="Describe the item"></textarea>
+  <input id="lostImage" type="file" accept="image/*">
+
+
+  <button onclick="submitLost()">Submit Lost Item</button>
+</section>
+
+<!-- RAISE FOUND -->
+<section id="found" class="card hidden">
+  <h2>Raise Found Item</h2>
+
+  <input id="foundName" placeholder="Item Name">
+  <select id="foundLocation"></select>
+  <input id="foundMobile" placeholder="Mobile Number">
+
+  <input id="foundTime" type="datetime-local">
+  <textarea id="foundDesc" placeholder="Describe the item"></textarea>
+  <input id="foundImage" type="file" accept="image/*">
+
+
+  <button onclick="submitFound()">Submit Found Item</button>
+</section>
+
+<!-- EXPLORE CAMPUS -->
+<section id="explore" class="card hidden">
+  <h2>Explore Campus Items</h2>
+
+  <div class="filters">
+    <select id="typeFilter">
+      <option value="lost">Lost Items</option>
+      <option value="found">Found Items</option>
+    </select>
+
+    <select id="exploreLocation"></select>
+
+    <button onclick="loadExplore()">Search</button>
+  </div>
+
+  <div id="exploreItems"></div>
+</section>
+
+
+<!-- MY COMPLAINTS -->
+<section id="my" class="card hidden">
+  <h2>My Complaints</h2>
+
+  <h3>My Lost Items</h3>
+  <div id="myLost"></div>
+
+  <h3>My Found Items</h3>
+  <div id="myFound"></div>
+</section>
+
+
+<script src="/script.js"></script>
+</body>
+</html>
