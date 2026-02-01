@@ -1,46 +1,73 @@
-# Vibecraft Item Recovery System
+# 🧭 SRM Lost & Found – Smart Campus Item Recovery System
 
-## Problem Statement
-Students often lose personal items on campus, and there is no centralized, reliable system to report, track, and recover lost or found items efficiently.
+A full-stack web application built for **Vibecraft Hackathon 2026** to help students report, explore, and recover lost & found items on campus efficiently.
 
-## Solution
-This project provides a campus-wide Lost & Found web application where users can:
-- Report lost items
-- Report found items
-- Browse campus-wide items
-- View possible matches with confidence percentages
-- Contact item owners securely
+---
 
-## Tech Stack
-- Frontend: HTML, CSS, JavaScript
-- Backend: Java, Spring Boot
-- Database: H2 / MySQL (configurable)
-- Build Tool: Maven
+## 🚀 Live Demo
+🎥 Demo Video: *(Upload link here after video upload)*  
+🌐 Localhost Demo: http://localhost:8080  
 
-## Architecture
-- Frontend communicates with backend via REST APIs
-- Spring Boot backend handles business logic
-- Repository pattern used for database operations
+---
 
-## AI Tools Used
-- ChatGPT for design guidance, debugging, and feature planning
+## 🎯 Problem Statement
+In large campuses, students frequently lose personal items like ID cards, wallets, chargers, earbuds, etc.  
+Existing notice boards and WhatsApp groups are unstructured and inefficient.
 
-## Prompt Strategy
-Prompts were used to:
-- Break down the problem into backend and frontend modules
-- Design REST APIs
-- Improve UI/UX flow
-- Debug integration issues efficiently
+---
 
-## Setup Instructions
-1. Clone the repository
-2. Ensure Java 17+ is installed
-3. Navigate to backend folder
-4. Run the Spring Boot application
+## 💡 Our Solution
+SRM Lost & Found is a centralized, smart platform that allows:
+- Reporting lost and found items with images
+- Searching items by location and type
+- Viewing personal complaints in one place
+- Smart matching of lost and found items with match percentage
+- Direct contact via mobile number
 
-## Run Instructions
-- Backend runs on: http://localhost:8080
-- Open frontend HTML files in browser
+---
 
-## Screenshots / Demo
-Screenshots and demo video can be added here.
+## ✨ Key Features
+- 🔐 Login & Signup system
+- 📦 Raise Lost / Found item with image & contact
+- 🔍 Explore campus items with filters
+- 👤 Profile page with all user items
+- 🤖 Smart matching engine (similarity score)
+- 📱 Click-to-call contact support
+- 🗑 Delete / Resolve complaints
+- 🖼 Image preview overlay
+
+---
+
+## 🛠 Tech Stack
+**Frontend**
+- HTML
+- CSS
+- JavaScript
+
+**Backend**
+- Java
+- Spring Boot
+- REST APIs
+- Hibernate / JPA
+
+**Database**
+- H2 (In-Memory)
+
+**Tools**
+- GitHub
+- VS Code
+- Postman
+
+---
+
+## 🧠 Matching Logic (Brief)
+Items are matched based on name similarity:
+- Exact match → High score
+- Partial match → Medium score
+- No match → Low score
+
+Matches are visually represented using **Green / Yellow / Red** indicators.
+
+---
+
+## 📂 Project Structure
