@@ -85,6 +85,8 @@ backend/ └── Spring Boot backend frontend/ └── HTML, CSS, JS files
 
 ## 📸 Screenshots
 
+
+<img width="1911" height="1073" alt="Screenshot 2026-02-01 081237" src="https://github.com/user-attachments/assets/233ee940-e686-4e5a-920b-e889283d507c" />
 <img width="1911" height="1073"<img width="1916" height="1079" alt="Screenshot 2026-02-01 081321" src="https://github.com/user-attachments/assets/5a8a6ec3-e9d1-4817-9bee-5aa1c12778c2" />
  alt="Screenshot 2026-02-01 081237" src="https://gith<img width="1919" height="1079" alt="Screenshot 2026-02-01 081335" src="https://github.com/user-attachments/assets/95da8b34-1d82-47a2-86bf-6c0b49495e9d" />
 ub.com/user-attachments/assets/0e37f0c5-3329-48a0-996<img width="1919" height="1079" alt="Screenshot 2026-02-01 081400" src="https://github.com/user-attachments/assets/efc1108b-ad1e-4d62-a20a-a9805540e081" />
