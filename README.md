@@ -85,13 +85,16 @@ backend/ └── Spring Boot backend frontend/ └── HTML, CSS, JS files
 
 ## 📸 Screenshots
 
+<img width="1911" height="1073"<img width="1916" height="1079" alt="Screenshot 2026-02-01 081321" src="https://github.com/user-attachments/assets/5a8a6ec3-e9d1-4817-9bee-5aa1c12778c2" />
+ alt="Screenshot 2026-02-01 081237" src="https://gith<img width="1919" height="1079" alt="Screenshot 2026-02-01 081335" src="https://github.com/user-attachments/assets/95da8b34-1d82-47a2-86bf-6c0b49495e9d" />
+ub.com/user-attachments/assets/0e37f0c5-3329-48a0-996<img width="1919" height="1079" alt="Screenshot 2026-02-01 081400" src="https://github.com/user-attachments/assets/efc1108b-ad1e-4d62-a20a-a9805540e081" />
+1-f681177f2947" /><img width="1918" height="1078" alt="Screenshot 2026-02-01 081418" src="https://github.com/user-attachments/assets/dc7e9052-874e-4f07-9665-e1d9726acf33" />
+<img width="1917" height="1079" alt="Screenshot 2026-02-01 081436" src="https://github.com/user-attachments/assets/13123a2d-6fec-4137-9108-4eab0497bfa0" />
+<img width="1919" height="1079" alt="Screenshot 2026-02-01 081506" src="https://github.com/user-attachments/assets/5a4854fb-35ae-4a7a-ac5c-09e01ac6bfc8" />
+<img width="1917" height="1079" alt="Screenshot 2026-02-01 081527" src="https://github.com/user-attachments/assets/ec41a401-8196-47c1-8a85-ad9d73f9ce80" />
 
 ---
 
-## 👥 Team
-- Jaswanth (Full Stack Developer)
-
----
 
 ## 🔁 Build Reproducibility Instructions
 
