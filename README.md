@@ -5,7 +5,7 @@ A full-stack web application built for **Vibecraft Hackathon 2026** to help stud
 ---
 
 ## 🚀 Live Demo
-🎥 Demo Video: https://drive.google.com/file/d/1cz7XmYROCOXRAnEuCKJ31E1fkh6A-0tZ/view?usp=drivesdk
+🎥 Demo Video: https://drive.google.com/file/d/1-3XxSqQp3pVQTPMAQzvwdZi0BGrlfAag/view?usp=drivesdk
 
 ⚠️ This project is currently demonstrated via **local deployment**.
 
