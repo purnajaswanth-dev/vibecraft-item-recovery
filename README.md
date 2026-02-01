@@ -5,7 +5,7 @@ A full-stack web application built for **Vibecraft Hackathon 2026** to help stud
 ---
 
 ## 🚀 Live Demo
-🎥 Demo Video: *(Upload link here after video upload)*  
+🎥 Demo Video: https://drive.google.com/file/d/1cz7XmYROCOXRAnEuCKJ31E1fkh6A-0tZ/view?usp=drivesdk
 🌐 Localhost Demo: http://localhost:8080  
 
 ---
@@ -71,3 +71,23 @@ Matches are visually represented using **Green / Yellow / Red** indicators.
 ---
 
 ## 📂 Project Structure
+backend/ └── Spring Boot backend frontend/ └── HTML, CSS, JS files
+---
+
+## 📸 Screenshots
+
+
+---
+
+## 👥 Team
+- Jaswanth (Full Stack Developer)
+
+---
+
+## 🏁 Conclusion
+This project demonstrates how simple, well-designed systems can solve real campus problems effectively.  
+Built with focus on **clarity, usability, and real-world impact**.
+
+---
+
+⭐ If you like this project, please star the repository!
