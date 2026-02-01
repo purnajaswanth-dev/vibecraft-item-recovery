@@ -6,7 +6,16 @@ A full-stack web application built for **Vibecraft Hackathon 2026** to help stud
 
 ## 🚀 Live Demo
 🎥 Demo Video: https://drive.google.com/file/d/1cz7XmYROCOXRAnEuCKJ31E1fkh6A-0tZ/view?usp=drivesdk
-🌐 Localhost Demo: http://localhost:8080  
+
+⚠️ This project is currently demonstrated via **local deployment**.
+
+The application runs on:
+http://localhost:8080
+
+> Note: `localhost` is machine-specific and works only on the system where the backend server is running.  
+> Judges can reproduce the demo by following the setup instructions below.
+
+A full demo video is provided to showcase all features.
 
 ---
 
@@ -83,6 +92,26 @@ backend/ └── Spring Boot backend frontend/ └── HTML, CSS, JS files
 - Jaswanth (Full Stack Developer)
 
 ---
+
+## 🔁 Build Reproducibility Instructions
+
+This project is designed for local execution.
+
+### Backend
+1. Install Java 17+
+2. Clone the repository
+3. Run:
+   ./mvnw spring-boot:run
+   (or mvnw.cmd on Windows)
+
+Backend starts at:
+http://localhost:8080
+
+### Frontend
+1. Open frontend/index.html in browser
+2. Ensure backend is running
+
+The frontend communicates with the backend using REST APIs on localhost.
 
 ## 🏁 Conclusion
 This project demonstrates how simple, well-designed systems can solve real campus problems effectively.  
